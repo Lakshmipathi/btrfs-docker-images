@@ -1,6 +1,20 @@
 # btrfs-docker-images
 
 
+### Building Images
+
+  Pull the repo contents:
+
+	  cd btrfs-docker-images/
+
+  Build the specific container image:
+
+          docker build -t opensuse `pwd`/openSUSE
+
+### Launch the container
+
+	  docker run opensuse
+
 ### Todo
 
 - Add other distros.
