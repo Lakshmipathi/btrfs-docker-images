@@ -13,7 +13,7 @@
 
 ### Launch the container
 
-	  docker run opensuse
+	  docker run -it opensuse
 
 ### Todo
 
