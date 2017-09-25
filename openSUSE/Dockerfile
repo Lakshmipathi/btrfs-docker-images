@@ -7,6 +7,8 @@ RUN zypper -n install git autoconf automake gcc make
 # Install needed dependencies.
 RUN zypper -n install e2fsprogs-devel libblkid-devel zlib-devel  lzo-devel asciidoc xmlto
 
+RUN zypper -n install tar which e2fsprogs
+
 # Clone the repo
 RUN git clone https://github.com/kdave/btrfs-progs.git
 

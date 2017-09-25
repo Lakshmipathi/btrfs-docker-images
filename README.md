@@ -15,6 +15,11 @@
 
 	  docker run -it opensuse
 
+  or
+
+	 docker run -it --privileged=true --device=/dev/loop0:/dev/loop0 --device=/dev/loop1:/dev/loop1  --device=/dev/loop2:/dev/loop2  --device=/dev/loop3:/dev/loop3 --device=/dev/loop4:/dev/loop4   opensuse
+
+
 ### Todo
 
 - Add other distros.
