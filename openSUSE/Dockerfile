@@ -5,7 +5,7 @@ MAINTAINER Lakshmipathi.G
 RUN zypper -n install git autoconf automake gcc make
 
 # Install needed dependencies.
-RUN zypper -n install e2fsprogs-devel libblkid-devel zlib-devel  lzo-devel asciidoc xmlto
+RUN zypper -n install e2fsprogs-devel libblkid-devel zlib-devel  lzo-devel asciidoc xmlto which
 
 RUN zypper -n install tar which e2fsprogs
 
