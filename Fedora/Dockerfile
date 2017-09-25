@@ -5,7 +5,7 @@ MAINTAINER Lakshmipathi.G
 RUN yum -y install git autoconf automake gcc make
 
 # Install needed dependencies
-RUN yum -y install e2fsprogs-devel libblkid-devel zlib-devel  lzo-devel asciidoc xmlto which
+RUN yum -y install e2fsprogs-devel libblkid-devel zlib-devel  lzo-devel asciidoc xmlto which findutils xz
 
 # Clone the repo
 RUN git clone https://github.com/kdave/btrfs-progs.git
