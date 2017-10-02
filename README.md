@@ -20,13 +20,15 @@
 	 docker run -it --privileged=true --device=/dev/loop0:/dev/loop0 --device=/dev/loop1:/dev/loop1  --device=/dev/loop2:/dev/loop2  --device=/dev/loop3:/dev/loop3 --device=/dev/loop4:/dev/loop4   opensuse
 
 
+### Launch armv8 container
+
+	docker run -it --privileged=true --device=/dev/loop0:/dev/loop0 --device=/dev/loop1:/dev/loop1  --device=/dev/loop2:/dev/loop2  --device=/dev/loop3:/dev/loop3 --device=/dev/loop4:/dev/loop4  laks/btrfs_armv8
+
 ### Todo
 
-- Add other distros.
+- Add arm32,mips,ppc64.
 
-- loop-back device setup. (using either -v /dev:/dev --privileged or create via mknod)
+- Integrate with travis
 
-- Invoke 'make test' && save logs.
-
-- Push pre-built images to Docker hub. 
+- Run all tests (make test) and ensure they work.
 
